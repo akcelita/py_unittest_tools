@@ -1,0 +1,30 @@
+{
+  "name": "py_unittest_tools",
+  "description": "Python package with handy utility functions, mainly for use in unit testing.",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "test": "python3 -m pytest",
+    "coverage": "coverage run -m pytest && coverage xml && coverage report && coverage html",
+    "flake": "(flake8 | wc); (flake8 | head)",
+    "monitor": "nodemon -e py -x 'clear; yarn $@'",
+    "doc": "cd doc && sphinx-apidoc -o source ../py_unittest_tools && make html"
+  },
+  "python_version": ">3.6.7",
+  "python_dependencies": [
+    "numpy"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akcelita/py_unittest_tools"
+  },
+  "author": {
+    "name": "Akcelita",
+    "email": "akcelita@gmail.com"
+  },
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/akcelita/py_unittest_tools/issues"
+  },
+  "homepage": "https://github.com/akcelita/py_unittest_tools#readme"
+}
