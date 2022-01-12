@@ -1,0 +1,2 @@
+- 0.0.1 - 1 / 12 / 2022
+    - Moved utility code to its own package
