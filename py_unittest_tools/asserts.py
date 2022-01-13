@@ -4,7 +4,7 @@ import re
 import numpy as np
 
 
-def assert_call_lists_equals(calls: List[call], expected_calls: List[call]):
+def assert_call_lists_equals(calls: List, expected_calls: List):
     """
         Asserts wether two call lists are equal or not. The call arguments can be optionally converted to str before comparison.
     """
