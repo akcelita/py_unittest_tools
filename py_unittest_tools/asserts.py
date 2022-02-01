@@ -47,7 +47,7 @@ def assert_values_equal(actual: Any, expected: Any):
     eq_type = 'equal'
     if isinstance(expected, str):
         eq_type = 'string_equal'
-        actual = re.sub("0x[0-9a-fA-F]", "0xF", str(actual))
+        actual = re.sub("0x[0-9a-fA-F]+", "0xF", str(actual))
     elif isinstance(actual, np.ndarray) or isinstance(expected, np.ndarray):
         eq_type = 'numpy_equal'
         eq = np.all(np.isclose(actual, expected))
